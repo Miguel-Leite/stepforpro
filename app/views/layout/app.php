@@ -35,7 +35,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-4 col-xs-12">
                         <div class="container">
-                            <a href="#" class="footer-brand">StepFor<span>Pro</span></a>
+                            <a href="<?=BASE_URL?>" class="footer-brand">StepFor<span>Pro</span></a>
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, 
                                 perspiciatis voluptas architecto debitis enim aperiam corrupti harum cumque 
