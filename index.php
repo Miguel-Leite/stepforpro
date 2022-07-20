@@ -1,7 +1,8 @@
 <?php
 
-use app\core\Router;
-
+/**
+ * Exibir error na telo caso existir de sintaxe ou mesmo de exception.
+ */
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -9,17 +10,41 @@ session_start();
 
 require_once 'bootstrap.php';
 
+use app\core\Router;
 
+/**
+ * URL BASE do site -> exemplo: http://domain.co.ao/
+ * OBS: Obrigatorio informa a url do projecto.
+ */
+const BASE_URL = "http://localhost/StepForPro/";
+
+/**
+ * Classe responsavel por fazer o sistema de roteamento
+ */
 $router = new Router('StepForPro');
-$router -> get('/','PagesServices::index');
-$router -> get('/about',function() {
-    echo "About Page";
-});
 
+/**
+ * Carregado a pagina home
+ */
+$router -> get('/','PagesServices::index');
+/**
+ * Carregando a pagina sobre
+ */
+$router -> get('/about','PagesServices::about');
+/**
+ * Carregando a pagina serviços
+ */
+$router -> get('/services','PagesServices::services');
+
+/**
+ * Carregando pagina de ERRO 404 caso a rota informada na url não exista
+ */
 $router->addNotFoundHandler(function () {
     require_once __DIR__. DIRECTORY_SEPARATOR
     . "app" . DIRECTORY_SEPARATOR . "views" . DIRECTORY_SEPARATOR .
     "error" . DIRECTORY_SEPARATOR . "404.php";
 });
-
+/**
+ * Executar o roteamento
+ */
 $router->dispatch();
