@@ -83,6 +83,8 @@
     <script src="<?=asset()?>vendor/owl/js/owl.carousel.min.js"></script>
     <!-- aos -> aos.js -->
     <script src="<?=asset()?>vendor/aos/aos.js"></script>
+    <!-- axios -> axios.min.js -->
+    <script src="<?=asset()?>vendor/axios/axios.min.js"></script>
     <!-- toast - iziToast.min.js -->
     <script src="<?=asset()?>vendor/izitoast/js/iziToast.min.js"></script>
     <!-- main script -> main.js -->

@@ -3,14 +3,15 @@
 /**
  * Exibir error na telo caso existir de sintaxe ou mesmo de exception.
  */
+
+
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 session_start();
 
 require_once 'bootstrap.php';
-
-use app\core\Router;
+use app\core\http\Router;
 
 
 /**
@@ -34,6 +35,10 @@ $router -> get('/servicos','PagesServices::services');
  * Carregando a pagina de login
  */
 $router -> get('/login','PagesServices::login');
+/**
+ * Rota responsavel por envio de mensagem
+ */
+$router -> post('/contacto','ContactServices::sendMessage');
 
 /**
  * Rota responsavel por fazer o login

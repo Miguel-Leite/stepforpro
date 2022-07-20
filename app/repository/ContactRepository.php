@@ -2,9 +2,9 @@
 
 namespace app\repository;
 
-class AboutRepository extends Repository
+class ContactRepository extends Repository
 {
-    protected $table = 'about_us';
+    protected $table = 'contact';
     protected $primary_key = 'id';
 
 }
