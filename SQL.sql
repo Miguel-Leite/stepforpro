@@ -49,3 +49,13 @@ VALUES
 (NULL, 'fa fa-globe', 'danger', 'Web app', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'), 
 (NULL, 'fa fa-mobile', 'secundary', 'Mobile app', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'),
 (NULL, 'fa-desktop', 'green', 'Desktop app', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.') 
+
+
+-- Este script registra 2 usuarios no sistema 1 administrador e 1 usuario normal.
+-- credencial do administrador: email: admin@gmail.com, senha: 1234
+-- credencial do usuario normal: email: miguelleite200leite@gmail.com, senha: 1234
+
+INSERT INTO `user` (`id`, `name`, `email`, `is_admin`, `password`) 
+VALUES 
+(NULL, 'Admin', 'admin@gmail.com', '1', '$2y$10$XTRphKWTDDvs.UEBdHV3yuuaq5by5JjLJZrwOFdHdDrFTT.y0Ti9e'), 
+(NULL, 'Miguel Leite', 'miguelleite200leite@gmail.com', '0', '$2y$10$XTRphKWTDDvs.UEBdHV3yuuaq5by5JjLJZrwOFdHdDrFTT.y0Ti9e') 
