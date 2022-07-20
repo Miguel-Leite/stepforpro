@@ -9,7 +9,7 @@
     <div class="content">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-md-6">
                     <div class="image" data-aos="fade-right">
                         <img src="<?=asset()?>/img/contact.jpg" class="w-100">
                     </div>

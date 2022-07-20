@@ -2,7 +2,7 @@
     <?php require_once 'layout/navbar.php'; ?>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-7 col-xl-7 col-md-12">
+            <div class="col-lg-7 col-xl-7 col-sm-12 col-md-6">
                 <h1 data-aos="fade-right">Fale conosco apartir do nosso app para clientes</h1>
                 <p data-aos="fade-right" data-aos-delay="1000">Facere delectus vero aliquid deserunt, obcaecati magnam architecto, 
                 sapiente provident neque repellendus molestiae ducimus adipisci 
@@ -11,7 +11,7 @@
                 <a href="#" data-aos="fade-up" data-aos-duration="1000" class="btn btn-primary-ws"><i class="fa fa-download" aria-hidden="true"></i> Download app</a>
                 <a href="<?=BASE_URL?>sobre" data-aos="fade-up" data-aos-duration="1000"  class="btn btn-dark-ws">Sobre nós</a>
             </div>
-            <div class="col-lg-5 col-xl-5 col-md-12">
+            <div class="col-lg-5 col-xl-5 col-sm-6 d-none d-md-block">
                 <div class="image" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="1500">
                     <img src="<?=asset()?>img/phone.png" alt="Screen App">
                 </div>
@@ -64,7 +64,7 @@
         <div class="divisor-to-black" data-aos="fade-up"></div>
         <br><br>
         <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-12" data-aos="zoom-in-right" data-aos-duration="1000">
+            <div class="col-lg-4 col-md-12 my-2 mb-lg-0" data-aos="zoom-in-right" data-aos-duration="1000">
                 <div class="information">
                     <div class="information-item">
                         <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-12" data-aos="zoom-in-left" data-aos-duration="1-00">
+            <div class="col-lg-8 col-md-12 my-2 mb-lg-0" data-aos="zoom-in-left" data-aos-duration="1-00">
                 <form method="post" id="form-contact">
                     <div class="form-group row">
                         <div class="col-md-6">

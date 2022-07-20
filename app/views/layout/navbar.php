@@ -7,13 +7,13 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active nav-item-ws">
+                <li class="nav-item <?=($page==='index')? 'active' : '';?> nav-item-ws">
                     <a class="nav-link" href="<?=BASE_URL?>">Home</a>
                 </li>
-                <li class="nav-item nav-item-ws">
+                <li class="nav-item <?=($page==='about')? 'active' : '';?> nav-item-ws">
                     <a class="nav-link" href="<?=BASE_URL?>sobre">Sobre</a>
                 </li>
-                <li class="nav-item nav-item-ws">
+                <li class="nav-item <?=($page==='services')? 'active' : '';?> nav-item-ws">
                     <a class="nav-link" href="<?=BASE_URL?>servicos">Serviços</a>
                 </li>
                 <?php if (isset($_SESSION['auth'])): ?>

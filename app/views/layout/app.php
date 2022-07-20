@@ -32,8 +32,8 @@
     <footer>
         <div class="footer-top">
             <div class="container" data-aos="fade-up">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-4 mb-2 col-md-4 col-xs-12">
                         <div class="container">
                             <a href="<?=BASE_URL?>" class="footer-brand">StepFor<span>Pro</span></a>
                             <p>
@@ -44,7 +44,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-xs-12">
+                    <div class="col-lg-2 mb-2 col-md-4 col-xs-12">
                         <h4>Menu</h4>
                         <ul>
                             <li><a href="#"> Home </a></li>
@@ -52,14 +52,14 @@
                             <li><a href="#"> Serviços</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-12">
+                    <div class="col-lg-3 mb-2 col-md-4 col-xs-12">
                         <h4>Nossos Cursos</h4>
                         <ul>
                             <li>Ciências Economica & Jurídica</li>
                             <li>Ciências Física & Bíologica</li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-12">
+                    <div class="col-lg-3 mb-2 col-md-5 col-xs-12">
                         <h4>Receba Alerta</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nisi!</p>
                         <form method="post">

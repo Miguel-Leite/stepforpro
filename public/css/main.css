@@ -76,6 +76,14 @@ a {
     font-size: 15px;
     color: var(--text-light-1-ws);
 }
+@media (max-width: 434px) {
+    .hero h1 {
+        font-size: 25px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+}
 .back {
     width: 60px;
     height: 60px;
@@ -220,6 +228,18 @@ a {
     filter: blur(70px);
     z-index: 9;
 }
+@media (max-width: 440px) {
+    .header::after {
+        left: 0;
+        width: 100px;
+        height: 100px;
+    }
+    .header::before {
+        right: 10%;
+        width: 100px;
+        height: 100px;
+    }
+}
 .header > .container {
     margin-top: 70px;
     z-index: 9;
@@ -230,6 +250,7 @@ a {
     font-size: 52px;
     color: var(--white-1-ws) !important;
 }
+
 .header > .container p {
     margin-top: 20px;
     color: var(--light-1-ws);
@@ -276,6 +297,37 @@ a {
     height: 100%;
 }
 
+@media (max-width: 991px) {
+    .header > .container h1 {
+        font-size: 36px;
+    }
+    .header > .container .btn-dark-ws,
+    .header > .container .btn-primary-ws {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .header > .container p {
+        font-size: 15px;
+    }
+    .header > .container .btn-dark-ws,
+    .header > .container .btn-primary-ws{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .header > .container h1 {
+        font-size: 32px;
+    }
+}
+@media (min-width: 575px) and (max-width: 768px) {
+    .header > .container h1 {
+        font-size: 28px;
+    }
+    .header > .container .image {
+        display: none;
+    }
+}
 .navbar {
     transition: .2s;
     z-index: 999;
@@ -326,6 +378,7 @@ a {
     background-color: var(--secundary-3-ws);
     transition: width .2s ease;
 }
+.navbar-dark .navbar-nav .active .nav-link,
 .navbar-dark .navbar-nav .nav-link:hover {
     color: var(--light-3-ws) !important;
     transition: color .2s ease;
@@ -345,6 +398,7 @@ a {
 .navbar-expand-lg .navbar-nav {
     gap: 25px;
 }
+.navbar-dark .navbar-nav .active.nav-item-ws::before,
 .navbar-dark .navbar-nav .nav-item-ws:hover::before {
     width: 100%;
     transition: width .2s ease;
@@ -369,6 +423,13 @@ a {
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:hover {
     background-color: var(--secundary-1-ws);
     color: var(--light-3-ws);
+}
+@media (max-width: 991px) {
+    .navbar-dark .navbar-nav .active.nav-item-ws::before,
+    .navbar-dark .navbar-nav .nav-item-ws:hover::before {
+        width: 0%;
+        transition: width .2s ease;
+    }    
 }
 /* 
 =========================== ABOUT APP ==============================
@@ -581,7 +642,23 @@ a {
     color: var(--light-3-ws);
     font-size: 14px;
 }
-
+@media (max-width: 750px) {
+    .contact::before {
+        width: 350px;
+        height: 350px;
+        left: 20%;
+    }
+}
+@media (max-width: 440px) {
+    .contact::before {
+        width: 100px;
+        height: 100px;
+        left: 0%;
+    }
+    .contact .information .information-item p {
+        font-size: 13px;
+    }
+}
 /* 
 ===================== FOOTER ======================
 */
@@ -597,7 +674,7 @@ footer .footer-top {
 }
 footer .footer-top h4 {
     font-weight: 700;
-    color: var(--light-3-ws);
+    color: var(--blue-4-ws);
     text-transform: uppercase;
 }
 footer .footer-top .footer-brand:hover,
@@ -684,10 +761,10 @@ footer .footer-top form > .icon {
 footer .footer-top form > button {
     padding: 8px;
     border: 0;
-    background-color: var(--secundary-2-ws);
-    border-right: 1px solid var(--dark-3-ws);
-    border-top: 1px solid var(--dark-3-ws);
-    border-bottom: 1px solid var(--dark-3-ws);
+    background-color: var(--blue-2-ws);
+    border-right: 1px solid var(--blue-3-ws);
+    border-top: 1px solid var(--blue-3-ws);
+    border-bottom: 1px solid var(--blue-3-ws);
     color: var(--light-2-ws);
     cursor: pointer;
 }
@@ -800,6 +877,19 @@ main.login form button:hover {
     filter: blur(120px);
     z-index: -1;
 }
+@media (max-width: 991px) {
+    .about .content p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .about .content h1 {
+        margin-top: 60px;
+    }
+    .about .content p {
+        font-size: 15px;
+    }
+}
 /* 
 =========================== SERVICES ===============================
 */
@@ -893,7 +983,21 @@ main.login form button:hover {
     }
     
 }
+@media (max-width: 767px) {
+    .services .content h1 {
+        margin-top: 60px;
+    }
+    .services .content p {
+        font-size: 15px;
+    }
+}
 @media (max-width: 434px) {
+    .services .content h1 {
+        font-size: 25px !important;
+    }
+    .services .content p {
+        font-size: 14px;
+    }
     .services .content .services {
         grid-template-columns: repeat(1, 1fr);
         gap: 35px;
