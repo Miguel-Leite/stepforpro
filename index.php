@@ -12,16 +12,11 @@ require_once 'bootstrap.php';
 
 use app\core\Router;
 
-/**
- * URL BASE do site -> exemplo: http://domain.co.ao/
- * OBS: Obrigatorio informa a url do projecto.
- */
-const BASE_URL = "http://localhost/StepForPro/";
 
 /**
  * Classe responsavel por fazer o sistema de roteamento
  */
-$router = new Router('StepForPro');
+$router = new Router(FOLDER_APP);
 
 /**
  * Carregado a pagina home
