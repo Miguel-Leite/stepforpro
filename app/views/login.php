@@ -23,19 +23,19 @@
 <body>
     <a href="<?=BASE_URL?>" data-aos="fade-right" data-aos-duration="1200" class="back" title="Voltar"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
     <main class="login col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-        <form action="#">
-            <input type="text" placeholder="Endereço e-mail...">
-            <input type="password" placeholder="Palavra-passe">
+        <form actionToredirect="<?=BASE_URL?>" action="<?=BASE_URL?>auth" class="form-login">
+            <input type="text" name="email" placeholder="Endereço e-mail...">
+            <input type="password" name="password" placeholder="Palavra-passe">
             <button type="submit"> Entrar <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
         </form>
     </main>
     <script src="<?=asset()?>vendor/jquery/jquery.min.js"></script>
     <!-- bootstrap -> bootstrap.min.js -->
     <script src="<?=asset()?>vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- owl -> owl.carousel.min.js -->
-    <script src="<?=asset()?>vendor/owl/js/owl.carousel.min.js"></script>
     <!-- aos -> aos.js -->
     <script src="<?=asset()?>vendor/aos/aos.js"></script>
+    <!-- axios -> axios.min.js -->
+    <script src="<?=asset()?>vendor/axios/axios.min.js"></script>
     <!-- toast - iziToast.min.js -->
     <script src="<?=asset()?>vendor/izitoast/js/iziToast.min.js"></script>
     <!-- main script -> main.js -->

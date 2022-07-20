@@ -16,9 +16,21 @@
                 <li class="nav-item nav-item-ws">
                     <a class="nav-link" href="<?=BASE_URL?>servicos">Serviços</a>
                 </li>
+                <?php if (isset($_SESSION['auth'])): ?>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" 
+                    id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Olá,
+                    Sr(a)  <?=(auth()->is_admin > 0 ? 'adminstrador(a) '.auth()->name : auth()->name);?></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="<?=BASE_URL?>sair">Sair</a>
+                    </div>
+                </li>
+                <?php else: ?>
                 <li class="nav-item">
                     <a class="btn" href="<?=BASE_URL?>login">Login</a>
                 </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>

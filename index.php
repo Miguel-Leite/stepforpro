@@ -41,6 +41,11 @@ $router -> get('/login','PagesServices::login');
 $router ->post('/auth','AuthServices::login');
 
 /**
+ * Rota responsavel por fazer o logout (sair)
+ */
+$router ->get('/sair','AuthServices::logout');
+
+/**
  * Carregando pagina de ERRO 404 caso a rota informada na url não exista
  */
 $router->addNotFoundHandler(function () {

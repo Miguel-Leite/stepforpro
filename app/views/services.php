@@ -20,7 +20,7 @@
                     </p>
                     <div class="services">
                         <?php foreach ($services as $service) :?>
-                        <div class="services-item" data-aos="zoom-in-right">
+                        <div class="services-item" data-aos="zoom-in-up" data-aos-duration="1200">
                             <div class="icon icon-<?=$service['color']?>-ws">
                                 <i class="<?=$service['icon']?>" aria-hidden="true"></i>
                             </div>

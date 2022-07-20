@@ -28,7 +28,7 @@ class Repository extends Database
         $sql = "SELECT * FROM {$this->table} WHERE {$field}=:{$field}";
         $this->query($sql);
         $this->bind(':'.$field,$value);
-        return $this->results();
+        return $this->result();
     }
 
 }

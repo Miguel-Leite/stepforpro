@@ -8,6 +8,7 @@
  */
 const BASE_URL = "http://localhost/StepForPro/";
 
+const AUTH_SESSION_KEY = "auth";
 /**
  * NOME DA PASTA do site -> é obrigatório informar para impedir a leitura 
  * da mesma ao fazer o roteamento.

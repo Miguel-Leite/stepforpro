@@ -58,6 +58,7 @@ class PagesServices {
      */
     public function login (): mixed
     {
+        verifyAuth();
         return view('login');
     }    
 }

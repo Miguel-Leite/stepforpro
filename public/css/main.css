@@ -353,6 +353,23 @@ a {
     color: var(--light-1-ws) !important;
     transition: color .2s ease;
 }
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: var(--dark-2-ws) !important;
+    color: var(--light-2-ws) !important;
+    border: 1px solid var(--border-dark-1-ws);
+    margin-top: 22px;
+    box-shadow: 0 0 25px var(--shadow-dark-1-ws);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
+    color: var(--light-1-ws);
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: var(--secundary-1-ws);
+    color: var(--light-3-ws);
+}
 /* 
 =========================== ABOUT APP ==============================
 */

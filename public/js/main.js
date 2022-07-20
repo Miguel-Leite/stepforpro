@@ -11,14 +11,20 @@ if (document.querySelector('.form-login'))
 
         const { data } = await axios.post(document.forms[0].action,fd);
         if (data.success) {
-            // iziToast.success({
-            //     title: 'Sucesso!',
-            //     message: data.message,
-            //     position: 'topRight'
-            //   });
-            console.log(data)
+            iziToast.success({
+                title: 'Sucesso!',
+                message: data.message,
+                position: 'topCenter'
+              });
+              setTimeout(()=>{
+                location.assign(document.querySelector('.form-login').getAttribute('actionToredirect'))
+             },3000)
         } else {
-            console.log(data)
+            iziToast.error({
+                title: 'Erro!',
+                message: data.message,
+                position: 'topCenter'
+              });
         }
     });
 }
