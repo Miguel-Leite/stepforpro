@@ -28,6 +28,16 @@ CREATE TABLE `db_pro`.`our_services`
     PRIMARY KEY (`id`) 
 ) ENGINE = InnoDB; 
 
+CREATE TABLE `db_pro`.`contact` 
+( 
+    `id` INT NOT NULL AUTO_INCREMENT , 
+    `name` VARCHAR(100) NOT NULL , 
+    `email` VARCHAR(255) NOT NULL , 
+    `phone` VARCHAR(20) NOT NULL , 
+    `subject` VARCHAR(100) NOT NULL , 
+    `message` TEXT NOT NULL , PRIMARY KEY (`id`)
+) ENGINE = InnoDB; 
+
 
 -- INSERT DATA IN TABLE ABOUT_US
 INSERT INTO `about_us` 
