@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Step For PRO</title>
+    <title>Step For PRO - Login</title>
 
     <!-- main style -> main.css -->
     <link rel="stylesheet" href="<?=asset('css/main.css')?>">
@@ -21,7 +21,7 @@
 
 </head>
 <body>
-    <a href="index.html" data-aos="fade-right" data-aos-duration="1200" class="back" title="Voltar"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
+    <a href="<?=BASE_URL?>" data-aos="fade-right" data-aos-duration="1200" class="back" title="Voltar"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
     <main class="login col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
         <form action="#">
             <input type="text" placeholder="Endereço e-mail...">

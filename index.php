@@ -28,14 +28,17 @@ $router = new Router('StepForPro');
  */
 $router -> get('/','PagesServices::index');
 /**
- * Carregando a pagina sobre
+ * Carregando a pagina de sobre
  */
 $router -> get('/sobre','PagesServices::about');
 /**
- * Carregando a pagina serviços
+ * Carregando a pagina de serviços
  */
 $router -> get('/servicos','PagesServices::services');
-
+/**
+ * Carregando a pagina de login
+ */
+$router -> get('/login','PagesServices::login');
 /**
  * Carregando pagina de ERRO 404 caso a rota informada na url não exista
  */

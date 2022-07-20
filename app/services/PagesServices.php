@@ -12,7 +12,8 @@ class PagesServices {
      */
     public function index(): mixed
     {
-        return view('index');
+        $page = 'index';
+        return view('layout/app',compact('page'));
     }
     /**
      * Method about responsavel por carregar a pagina
@@ -22,7 +23,8 @@ class PagesServices {
      */
     public function about (): mixed
     {
-        return view('about');
+        $page = 'about';
+        return view('layout/app',compact('page'));
     }
     /**
      * Method services responsavel por carregar a pagina
@@ -32,6 +34,17 @@ class PagesServices {
      */
     public function services (): mixed
     {
-        return view('services');
+        $page = 'services';
+        return view('layout/app',compact('page'));
+    }    
+    /**
+     * Method login responsavel por carregar a pagina de
+     * autenticação (login) do site
+     *
+     * @return mixed
+     */
+    public function login (): mixed
+    {
+        return view('login');
     }    
 }
