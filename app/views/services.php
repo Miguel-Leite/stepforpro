@@ -19,30 +19,15 @@
                         odit illum aperiam ut quas laboriosam aspernatur.
                     </p>
                     <div class="services">
+                        <?php foreach ($services as $service) :?>
                         <div class="services-item" data-aos="zoom-in-right">
-                            <div class="icon icon-danger-ws">
-                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            <div class="icon icon-<?=$service['color']?>-ws">
+                                <i class="<?=$service['icon']?>" aria-hidden="true"></i>
                             </div>
-                            <h5>Web app</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h5><?=$service['service']?></h5>
+                            <p><?=$service['description']?>.</p>
                         </div>
-    
-                        <div class="services-item" data-aos="zoom-in-up" data-aos-duration="1000">
-                            <div class="icon icon-secundary-ws">
-                                <i class="fa fa-mobile" aria-hidden="true"></i>
-                            </div>
-                            <h5>Mobile app</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-    
-                        <div class="services-item" data-aos="zoom-in-left" data-aos-duration="500">
-                            <div class="icon icon-green-ws">
-                                <i class="fa fa-desktop" aria-hidden="true"></i>
-                            </div>
-                            <h5>Desktop app</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        
+                        <?php endforeach;?>
                     </div>
                 </div>
             </div>

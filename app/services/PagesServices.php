@@ -2,8 +2,19 @@
 
 namespace app\services;
 
+use app\repository\AboutRepository;
+use app\repository\ServiceRepository;
+
 class PagesServices {
     
+    protected $serviceRepository, $aboutRepository;
+
+    public function __construct()
+    {
+        $this->serviceRepository = new ServiceRepository();
+        $this->aboutRepository = new AboutRepository();
+    }
+
     /**
      * Method index responsavel por carregar a pagina
      * inicial (home) do site
@@ -24,7 +35,8 @@ class PagesServices {
     public function about (): mixed
     {
         $page = 'about';
-        return view('layout/app',compact('page'));
+        $about = $this->aboutRepository->find(1)['description'];
+        return view('layout/app',compact('page','about'));
     }
     /**
      * Method services responsavel por carregar a pagina
@@ -35,7 +47,8 @@ class PagesServices {
     public function services (): mixed
     {
         $page = 'services';
-        return view('layout/app',compact('page'));
+        $services = $this->serviceRepository->all();
+        return view('layout/app',compact('page','services'));
     }    
     /**
      * Method login responsavel por carregar a pagina de
