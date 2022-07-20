@@ -1,7 +1,7 @@
 <?php
 
 require_once 'app/autoload.php';
-
+require_once 'app/config/config.php';
 /**
  * Array responsavel por registrar todas funções que se 
  * encontram na pasta utils.
