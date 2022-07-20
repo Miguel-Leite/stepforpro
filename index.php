@@ -30,11 +30,11 @@ $router -> get('/','PagesServices::index');
 /**
  * Carregando a pagina sobre
  */
-$router -> get('/about','PagesServices::about');
+$router -> get('/sobre','PagesServices::about');
 /**
  * Carregando a pagina serviços
  */
-$router -> get('/services','PagesServices::services');
+$router -> get('/servicos','PagesServices::services');
 
 /**
  * Carregando pagina de ERRO 404 caso a rota informada na url não exista

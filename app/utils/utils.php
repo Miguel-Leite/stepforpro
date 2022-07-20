@@ -22,7 +22,7 @@ function view (string $view, array $data = []): void
  * @param string $file
  * @return void
  */
-function asset(string $file): string
+function asset(string $file=''): string
 {
     return rtrim(BASE_URL,'/') . "/public/". $file;
 }
