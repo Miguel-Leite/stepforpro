@@ -4,6 +4,7 @@
 namespace app\repository;
 
 use app\database\Database;
+use app\database\QueryBuilder;
 
 class Repository extends Database
 {
@@ -24,11 +25,24 @@ class Repository extends Database
 
     public function findBy($value,$field)
     {
-
         $sql = "SELECT * FROM {$this->table} WHERE {$field}=:{$field}";
         $this->query($sql);
         $this->bind(':'.$field,$value);
         return $this->result();
+    }
+
+    public function create(array $data)
+    {
+        try {
+            $sql = QueryBuilder::insert($data,$this->table);   
+            $this->query($sql);
+            foreach($data as $key => $value){
+                $this->bind(':'.$key,$value);
+            }
+            return $this->execute($data);
+        } catch (\Exception $e) {
+            return $e->getMessage();
+        }
     }
 
 }
