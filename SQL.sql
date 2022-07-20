@@ -32,16 +32,20 @@ CREATE TABLE `db_pro`.`our_services`
 -- INSERT DATA IN TABLE ABOUT_US
 INSERT INTO `about_us` 
 (`id`, `description`) VALUES 
-(NULL, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+(NULL, 'Step For PRO é uma empresa dolor sit amet consectetur adipisicing elit. 
 Fugiat minus ex est dignissimos corporis quaerat atque ipsum dolor 
-qui magnam voluptate aliquid facilis veniam debitis nam dicta aut 
-excepturi quisquam reiciendis, vitae dolore. Labore sed repudiandae 
-nemo mollitia corporis laudantium ipsa laboriosam eum commodi asperiores. ');
+qui magnam voluptate aliquid facilis veniam debitis nam dicta aut excepturi 
+quisquam reiciendis, vitae dolore. Labore sed repudiandae nemo mollitia corporis 
+laudantium ipsa laboriosam eum commodi asperiores.<br /><br /> Lorem ipsum 
+dolor sit amet consectetur adipisicing elit. Fugiat minus ex est dignissimos 
+corporis quaerat atque ipsum dolor qui magnam voluptate aliquid facilis veniam debitis 
+nam dicta aut excepturi quisquam reiciendis, vitae dolore. Labore sed repudiandae nemo
+mollitia corporis laudantium ipsa laboriosam eum commodi asperior.');
 
 -- INSERT SERVICES IN TABLE OUR_SERVICES
 INSERT INTO `our_services` 
 (`id`, `icon`, `color`, `service`, `description`) 
 VALUES 
-(NULL, 'fa fa-mobile', 'danger', 'Web app', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'), 
+(NULL, 'fa fa-globe', 'danger', 'Web app', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'), 
 (NULL, 'fa fa-mobile', 'secundary', 'Mobile app', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'),
 (NULL, 'fa-desktop', 'green', 'Desktop app', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.') 
