@@ -34,6 +34,12 @@ $router -> get('/servicos','PagesServices::services');
  * Carregando a pagina de login
  */
 $router -> get('/login','PagesServices::login');
+
+/**
+ * Rota responsavel por fazer o login
+ */
+$router ->post('/auth','AuthServices::login');
+
 /**
  * Carregando pagina de ERRO 404 caso a rota informada na url não exista
  */
