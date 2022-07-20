@@ -19,20 +19,9 @@
                     <div class="divisor-to-black" data-aos="fade-up"></div>
 
                     <p class="mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Fugiat minus ex est dignissimos corporis quaerat atque ipsum dolor 
-                        qui magnam voluptate aliquid facilis veniam debitis nam dicta aut excepturi 
-                        quisquam reiciendis, vitae dolore. Labore sed repudiandae nemo mollitia corporis 
-                        laudantium ipsa laboriosam eum commodi asperiores.
+                       <?=$about?>
                     </p>
 
-                    <p class="mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Fugiat minus ex est dignissimos corporis quaerat atque ipsum dolor 
-                        qui magnam voluptate aliquid facilis veniam debitis nam dicta aut excepturi 
-                        quisquam reiciendis, vitae dolore. Labore sed repudiandae nemo mollitia corporis 
-                        laudantium ipsa laboriosam eum commodi asperiores.
-                    </p>
                 </div>
             </div>
         </div>
