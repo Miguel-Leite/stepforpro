@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="col-lg-8 col-md-12 my-2 mb-lg-0" data-aos="zoom-in-left" data-aos-duration="1-00">
-                <form method="post" id="form-contact">
+                <form action="<?=BASE_URL?>contacto" method="post" id="form-contact">
                     <div class="form-group row">
                         <div class="col-md-6">
                             <input type="text" class="form-control" name="name" id="name" placeholder="Nome completo">
