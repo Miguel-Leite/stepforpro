@@ -4,7 +4,7 @@ namespace app\repository;
 
 class UserRepository extends Repository
 {
-    protected $table = '';
-    protected $primary_key = '';
+    protected $table = 'user';
+    protected $primary_key = 'id';
 
 }

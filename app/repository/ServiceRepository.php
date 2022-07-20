@@ -4,7 +4,7 @@ namespace app\repository;
 
 class ServiceRepository extends Repository
 {
-    protected $table = '';
-    protected $primary_key = '';
+    protected $table = 'our_services';
+    protected $primary_key = 'id';
 
 }
