@@ -18,7 +18,7 @@ class AuthServices
         $email = trim(strip_tags($_POST['email']));
         $password = trim(strip_tags($_POST['password']));
         $user = $this->userRepository->findBy($email,'email');
-        if (empty($email) && empty($password)) {
+        if (empty($email) || empty($password)) {
             echo json_encode(["success" => false,"message" => "Por favor preencha o campo vazio do formulario."]);die;
         }
         
