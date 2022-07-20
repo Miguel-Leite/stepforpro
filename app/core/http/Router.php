@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace app\core\http;
 
-class Router {
+use app\interfaces\IRouter;
+
+class Router implements IRouter{
 
     private $folderApp;
     private array $handlers;

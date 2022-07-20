@@ -2,9 +2,10 @@
 
 namespace app\services;
 
+use app\interfaces\IUser;
 use app\repository\UserRepository;
 
-class AuthServices 
+class AuthServices implements IUser
 {
     private $userRepository;
 
@@ -30,7 +31,7 @@ class AuthServices
         echo json_encode(["success" => true,"message" => "Olá ${user['name']}, seja bem-vindo!"]); die;
     }
 
-    public function logout()
+    public function logout(): mixed
     {
         unset($_SESSION[AUTH_SESSION_KEY]);
         return redirect('');
