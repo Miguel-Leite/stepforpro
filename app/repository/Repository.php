@@ -1,12 +1,20 @@
 <?php
 
 
-namespace App\models;
+namespace app\repository;
 
 use app\database\Database;
 
 class Repository extends Database
 {
+    
+    public function all()
+    {
+        $sql = "SELECT * FROM {$this->table}";
+        $this->query($sql);
+        return $this->results();
+    }
+
     public function find($id)
     {
         $sql = "SELECT * FROM {$this->table} WHERE {$this->primary_key}={$id}";
